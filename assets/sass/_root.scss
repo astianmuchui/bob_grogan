@@ -277,7 +277,7 @@ html
 
 .txt-primary
 {
-    color: $primary-color;
+    color: lighten($primary-color, 10);
 }
 
 .txt-secondary
@@ -465,7 +465,7 @@ body
                         align-items: flex-start;
                         
                         position: absolute;
-                        top: 90%;
+                        top: 92%;
                         left: 0;
                         background-color: rgba(darken($primary-color, 20), 0.8);
                         width: 20%;
