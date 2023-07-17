@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $primary-color: #117dc5;
-$navy: #010818;
+$navy: #010818d3;
 $secondary-color: #cfe5fe;
 $white: #fff;
 $black: #111111;
@@ -445,7 +445,7 @@ body
         position: sticky;
         top: 0;
         z-index: 999;
-        padding: 2% 5%;
+        padding: 1.5% 5%;
         display: inline-flex;
         
         nav
@@ -512,7 +512,7 @@ body
                         position: absolute;
                         top: 92%;
                         left: 0;
-                        background-color: rgba(darken($primary-color, 20), 0.8);
+                        background-color: rgba(darken($primary-color, 20), 0.8) ;
                         width: 20%;
                         margin-left: 35%;
                         height: 50vh;
