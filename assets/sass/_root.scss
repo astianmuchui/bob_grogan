@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $primary-color: #117dc5;
+$navy: #010818;
 $secondary-color: #cfe5fe;
 $white: #fff;
 $black: #111111;
@@ -78,6 +79,7 @@ html
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: small;
     transition: all 0.3s ease-in-out;
 
     i
@@ -273,6 +275,49 @@ html
         background-color: $white;
         color: $black;
     }
+}
+
+.dot-primary
+{
+    height: 30px;
+    width: 50px;
+    background-color: $primary-color;
+    border-radius: 50%;
+}
+
+.border-primary
+{
+    height: 1px;
+    width: 100px;
+    background-color: #117dc5;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.border-secondary
+{
+    height: 1px;
+    width: 100px;
+    background-color: #cfe5fe;
+}
+
+.border-white
+{
+    height: 1px;
+    width: 100px;
+    background-color: #fff;
+}
+
+.border-black
+{
+    height: 1px;
+    width: 100px;
+    background-color: #111111;
+}
+
+.txt-caps
+{
+    text-transform: uppercase;
 }
 
 .txt-primary

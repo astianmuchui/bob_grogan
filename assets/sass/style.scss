@@ -55,10 +55,17 @@ body
 
         & .grid-container
         {
+
+            box-sizing: border-box;
+            padding: 1%;
             width: 90%;
             height: 90%;
             @extend .grid-2;
 
+            // &, & > *, & > * > *
+            // {
+            //     border: 1px solid orangered;
+            // }
 
             .info
             {
@@ -82,7 +89,109 @@ body
                     opacity: 0.5;
                 }
             }
+
+            div
+            {
+                box-sizing: border-box;
+                padding: 1%;
+            }
+
+
+            .text
+            {
+                @extend .y-start, .x-start;
+                background-image: url("/assets/img/blob.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-position-x: -20px;
+                background-position-y: -80px;
+
+                h2, h4
+                {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                }
+
+
+                h1
+                {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 1%;
+
+                    small
+                    {
+                        font-size: 10px;
+                        position: relative;
+                        top: -10px;
+                        opacity: 1;
+                        color: darken($primary-color, 10%);
+
+                    }
+
+                    span
+                    {
+                        font-weight: lighter;
+                        color: darken($primary-color, 10%);
+                    }
+                }
+
+                .short-intro
+                {
+                    width: 80%;
+                    height: max-content;
+                    opacity: 0.5;
+                    font-size: 13px;
+                    margin: 10px 0;
+                    padding: 1%;
+
+
+                }
+
+                ul
+                {
+                    width: 90%;
+                    padding: 1%;
+                    li
+                    {
+                        color: $navy;
+
+                        i
+                        {
+                            color: $primary-color;
+                            margin-right: 10px;
+                        }
+
+                        span
+                        {
+                            font-size: small;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+
+            }
+            
+            .image
+            {
+                // background-image: url("/assets/img/blob.png");
+                // background-repeat: no-repeat;
+                // background-position: center;
+                // background-size: cover;
+
+                img
+                {
+                    width: 90%;
+                }
+            }
+
+
         }
+
+
     }
 
 }
