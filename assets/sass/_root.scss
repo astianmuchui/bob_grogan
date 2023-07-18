@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $primary-color: #117dc5;
-$navy: #010818d3;
+$navy: #010818;
 $secondary-color: #cfe5fe;
 $white: #fff;
 $black: #111111;
@@ -80,7 +80,7 @@ html
     border-radius: 5px;
     cursor: pointer;
     font-size: small;
-    transition: all 0.3s ease-in-out;
+
 
     i
     {
@@ -90,6 +90,7 @@ html
 
     &:hover
     {
+        transition: all 0.3s ease-in-out;
         background-color: darken($primary-color, 10%);
     }
 }
@@ -194,9 +195,9 @@ html
 
 .shadowed
 {
-    box-shadow: 1px 1px inset rgba(220, 220, 220, 0.2) 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.044), inset -1px -1px rgba(255, 255, 255, 0), 1px 3px 24px -1px rgba(0,0,0,.15);
 
+}
 .btn-round
 {
     border-radius: 50%;
@@ -320,6 +321,11 @@ html
     text-transform: uppercase;
 }
 
+.txt-lower
+{
+    text-transform: lowercase;
+}
+
 .txt-primary
 {
     color: lighten($primary-color, 10);
@@ -438,6 +444,11 @@ body
     padding: 0;
     overflow-x: hidden;
 
+    .header-blue
+    {
+        background-color: $primary-color !important;
+    }
+
     header
     {
         width: 100%;
@@ -474,7 +485,7 @@ body
                         
                         i
                         {
-                            margin-left: 10px;
+                            margin-left: 5px;
                         }
 
                         &:hover
@@ -490,6 +501,7 @@ body
                 .services
                 {
                     display: block;
+                    width: max-content;
 
                     &:hover
                     {
@@ -553,5 +565,90 @@ body
         }
     }
 
+    /* End of header */
+
+    /* Start of footer section */
+
+    footer
+    {
+        height: 70vh;
+        width: 100%;
+        background-color: darken($primary-color, 25%);
+        box-sizing: border-box;
+        padding: 3% 2%;
+        
+        @extend .flex-column, .y-start;
+
+        .grid-container
+        {
+            width: 95%;
+            height: 70%;
+            @extend .grid-4;
+            box-sizing: border-box;
+            padding: 1%;
+
+            & , & > *, & > * > *
+            {
+                // border: 1px solid orangered;
+            }
+
+            .grid-item
+            {
+                box-sizing: border-box;
+                padding: 1%;
+
+                *
+                {
+                    font-size: smaller;
+                    margin: 5px 0;
+                }
+
+                h4
+                {
+                    font-weight: 100;
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                }
+
+                li
+                {
+                    margin: 10px 5px;
+
+                    a, span
+                    {
+                        font-size: smaller;
+                        color: $white;
+
+                        &:hover
+                        {   
+                            opacity: 0.8;
+                        }
+                    }
+
+                    i
+                    {
+                        color: $primary-color;
+                        margin: 0 10px 0  2px;
+                    }
+                }
+            }
+        }
+
+        .final
+        {
+            border-top: 1px solid $white;
+            height: 20vh;
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 1% 3%;
+
+            
+        }
+    }
+
+    /* End of footer section */
+
 }
-/* End of header */

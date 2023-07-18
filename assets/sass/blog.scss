@@ -1,0 +1,71 @@
+@import 'root';
+
+
+body
+{
+
+        main
+        {
+                width: 100%;
+                height: max-content;
+                @extend .flex-column;
+                box-sizing: border-box;
+                padding: 1%;
+                max-height: max-content;
+
+                .container
+                {
+                        width: 95%;
+                        @extend .grid-2;
+                        height: max-content;
+                        box-sizing: border-box;
+                        padding: 1%;
+                        grid-gap: 15px;
+
+                        &, & > * , & > * > *
+                        {
+                                border: 1px solid orangered;
+                        }
+
+                        .post
+                        {
+                                width: 100%;
+                                height: 40vh;
+
+                                @extend .grid-2;
+
+                                *
+                                {
+                                        max-width: 100%;
+                                }
+
+                                .content
+                                {
+                                        box-sizing: border-box;
+                                        padding: 1%;
+                                        // @extend .x-start, .y-start;
+                                        display: block;
+
+                                        a
+                                        {
+                                                text-decoration: none;
+                                                color: $black;
+                                                font-weight: bold;
+                                                width: 100%;
+                                                font-size: 20px;
+                                        }
+
+                                        span
+                                        {
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                opacity: 0.5;
+                                                width: 100%;
+                                        }
+                                }
+                        }
+
+                }
+        }
+
+}

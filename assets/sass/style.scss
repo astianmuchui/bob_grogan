@@ -105,7 +105,7 @@ body
                 background-position: center;
                 background-size: cover;
                 background-position-x: -20px;
-                background-position-y: -80px;
+                background-position-y: -100px;
 
                 h2, h4
                 {
@@ -176,9 +176,9 @@ body
                         {
                             font-size: small;
                             opacity: 0.6;
-
                             &:hover
                             {
+
                                 cursor: cell;
                                 opacity: 1;
                             }
@@ -197,7 +197,8 @@ body
 
                 img
                 {
-                    width: 90%;
+                    width: 95%;
+                    border-radius: 10px;                    
                 }
             }
 
@@ -206,5 +207,165 @@ body
 
 
     }
+
+    .blog
+    {
+        height: 160vh;
+        @extend .y-start;
+
+        h3
+        {
+            align-self: flex-start;
+            position: relative;
+            left: 6.5%;
+            padding-top: 1%;
+            border-top: 3px solid $primary-color;
+        }
+        .grid-container
+        {
+            height: 50%;
+
+            .post
+            {
+                height: 80%;
+                box-sizing: border-box;
+                padding: 1% 2%;
+
+                h1
+                {
+                    margin-bottom: 10px;
+                    max-height: 30%;
+                    a
+                    {
+                        font-size: initial;
+                        color : $primary-color;
+                    }
+                }
+
+                span
+                {
+                    margin-bottom: 5px;
+
+                    font-size: smaller;
+                }
+
+                p
+                {
+                    margin-top: 5px;
+
+                    font-size: 8px;
+                    opacity: 0.5;
+                    line-height: 21px;
+                }
+
+                a
+                {
+                    margin-top: 10px;
+                    font-size: 10px;
+                    opacity: 0.6;
+                    color: $primary-color;
+
+                    i
+                    {
+                        margin-left: 2px;
+                    }
+
+                    &:hover
+                    {
+                        transition: all 1s ease-in;
+
+                        opacity: 1;
+
+                        i
+                        {
+                            transform: translateX(2px);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .careers
+    {
+        height: 50vh;
+        width: 100%;
+        background-color: darken($primary-color, 25%);
+        @extend.flex-column;
+
+        h1
+        {
+            font-weight: 100;
+            margin-bottom: 2%;
+        }
+
+        h4
+        {
+            font-weight: 100;
+            text-transform: lowercase;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 2%;
+
+            * {text-transform: lowercase;}
+        }
+    }
+
+    .contact
+    {
+        height: 80vh;
+        h1
+        {
+            font-weight: 100;
+            font-size: 20px;
+            margin-bottom: 2%;
+        }
+
+        .form
+        {
+            @extend .shadowed;
+            box-sizing: border-box;
+            padding: 5%;
+            border-radius: 10px;
+            width: 80%;
+
+            form
+            {
+                margin-top: 10px;
+
+
+                input
+                {
+                    border-radius: 10px;
+                    width: 100%;
+                    padding: 1.5%;
+                    margin-bottom: 4%;
+                    border: 1px solid $primary-color;
+                    outline: none;
+                    // box-shadow: 0 0 3px rgba(0,0,0,0.2);
+                    font-size: xx-small;
+
+                    &::placeholder
+                    {
+                        font-size: xx-small;
+                    }
+                }
+                textarea
+                {
+                    font-size: smaller;
+                    width: 100%;
+                    padding: 2%;
+                    margin-bottom: 2%;
+                    border-radius: 10px;
+                    border: 1px solid $primary-color;
+                    outline: none;
+                    height: 120px;
+                    // box-shadow: 0 0 3px rgba(0,0,0,0.2);
+                }
+            }
+        }
+    }
+
 
 }
