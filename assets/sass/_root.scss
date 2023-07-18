@@ -53,21 +53,25 @@ html
 
 .y-start
 {
+    @extend .flex-column;
     justify-content: flex-start;
 }
 
 .y-end
 {
+    @extend .flex-column;
     justify-content: flex-end;
 }
 
 .x-start
 {
+    @extend .flex-column;
     align-items: flex-start;
 }
 
 .x-end
 {
+    @extend .flex-column;
     align-items: flex-end;
 }
 
@@ -326,6 +330,10 @@ html
     text-transform: lowercase;
 }
 
+.txt-light
+{
+    font-weight: 300;
+}
 .txt-primary
 {
     color: lighten($primary-color, 10);
