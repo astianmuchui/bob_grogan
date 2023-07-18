@@ -22,6 +22,7 @@ function handleScroll()
         else
         {
                 header.style.backgroundColor = 'transparent';
+                header.classList.remove("shadowed");
                 nav.style.backgroundColor = 'rgba(9,65,103,0.8)'; /* Dont change this: */
 
         }
