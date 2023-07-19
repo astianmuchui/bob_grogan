@@ -15,10 +15,11 @@ function handleScroll()
 {
         if ( window.pageYOffset > 0)  /* Check where the user is */
         {
-                header.style.backgroundColor = '#117dc5';
-                nav.style.backgroundColor = '#117dc5'; /* Change the dropdown list background as well */
+                header.style.backgroundColor = '#181842';
+                nav.style.backgroundColor = '#181842'; /* Change the dropdown list background as well */
                 header.classList.add("shadowed");
         }
+        
         else
         {
                 header.style.backgroundColor = 'transparent';
