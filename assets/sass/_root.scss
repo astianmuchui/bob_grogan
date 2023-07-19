@@ -4,6 +4,7 @@ $primary-color: #181842;
 $navy: #010818;
 $secondary-color: #daa520;
 $white: #fff;
+$bg: #fdfdfd;
 $black: #111111;
 $red: rgb(218, 64, 64);
 $green: rgb(5, 194, 106);
@@ -341,7 +342,7 @@ html
 
 .txt-secondary
 {
-    color: $secondary-color;
+    color: darken($secondary-color, 10);
 }
 
 .txt-white
