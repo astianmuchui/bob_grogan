@@ -145,3 +145,53 @@ body
         }
 
 }
+
+
+@media screen and (max-width: 950px)
+{
+        body
+        {
+                main
+                {
+                        height: max-content;
+
+                        .container
+                        {
+                                display: inline-flex;
+                                flex-wrap: wrap;
+                                margin-bottom: 30px;
+
+                                .blog-post 
+                                {
+                                        height: max-content;
+
+                                        *
+                                        {
+                                                margin-bottom: 15px;
+                                                margin-top: 5px;
+                                                height: max-content;
+                                        }
+                                }
+                        }
+
+                }
+
+                section
+                {
+                        .post-wrapper
+                        {
+                                width: 95%;
+
+                                img
+                                {
+                                        width: 95%;
+                                }
+
+                                p, h1, h4
+                                {
+                                        width: 95%;
+                                }
+                        }
+                }
+        }       
+}
