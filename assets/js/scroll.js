@@ -2,7 +2,7 @@
 
 const header = document.querySelector('#header'); /* Desktop header element */
 const nav = document.querySelector('#nav'); /* Refers to drop down nav */
-
+menu = document.getElementById("menu")
 
 
 /**
@@ -18,6 +18,7 @@ function handleScroll()
                 header.style.backgroundColor = '#181842';
                 nav.style.backgroundColor = '#181842'; /* Change the dropdown list background as well */
                 header.classList.add("shadowed");
+                menu.style.zIndex = "998";
         }
         
         else
