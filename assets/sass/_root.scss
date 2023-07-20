@@ -560,15 +560,14 @@ body
                     {
                         
                         opacity: 0;
-                        animation: fadeUp 0.5s ease-in forwards;
+                        animation: fadeUp 0.8s ease-in forwards;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         
                         position: absolute;
-                        top: 92%;
+                        top: 90%;
                         left: 0;
-                        background-color: rgba(darken($primary-color, 20), 0.8) ;
                         width: 20%;
                         margin-left: 35%;
                         height: 50vh;
@@ -576,7 +575,10 @@ body
                         border-radius: 5px;
                         backdrop-filter: blur(3px);
                         z-index: 999;
+                        background-color: rgba($primary-color, 0.8);
+                       
                         display: none;
+
 
                         li
                         {
@@ -640,7 +642,8 @@ body
         @extend .shadowed;
         backdrop-filter: blur(3px); 
         overflow-y: hidden;
-        
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in forwards;
 
         span
         {
@@ -799,7 +802,7 @@ body
 
                     a, span
                     {
-                        font-size: smaller;
+                        font-size: 12px;
                         color: $white;
 
                         &:hover
@@ -874,9 +877,15 @@ body
             top: 0;
             z-index: 999;
 
+            p
+            {
+                width: 50%;
+            }
+
+
             nav
             {
-                width: 95%;
+                width: 50%;
                 // border: 1px solid orangered;
 
                 .hamburger
@@ -884,7 +893,7 @@ body
                     display: flex;
                     position: relative;
                     left: 85%;
-                    top: 20%;
+                    top: 14%;
                 }
 
                 ul

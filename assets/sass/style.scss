@@ -18,7 +18,7 @@ body
         {
             height: 100%;
             width: 100%;
-            background-color: rgba(darken($primary-color, 10), 0.6);
+            background-color: rgba(lighten($primary-color, 10), 0.6);
             backdrop-filter: blur(2px);
             @extend .flex-column, .x-start;
             padding-left: 5%;
@@ -224,11 +224,7 @@ body
 
         h3
         {
-            align-self: flex-start;
-            position: relative;
-            left: 6.5%;
-            padding-top: 1%;
-            border-top: 3px solid $primary-color;
+            position: relative;     
         }
 
         .grid-container
@@ -250,6 +246,7 @@ body
                 {
                     margin-bottom: 10px;
                     max-height: 30%;
+                    
                     a
                     {
                         font-size: initial;
@@ -273,16 +270,31 @@ body
                     line-height: 21px;
                 }
 
+                h4
+                {
+                    
+                    a
+                    {
+                        width: 90%;
+                        font-size: 15px;
+                    }
+                }
+
                 a
                 {
                     margin-top: 10px;
-                    font-size: 10px;
+                    font-size: 12px;
                     opacity: 0.6;
                     color: $primary-color;
-                    width: max-content;
+                    width: 25%;
+                    display: inline-flex;
+                    justify-content: space-between;
+
                     i
                     {
-                        margin-left: 2px;
+                        margin-top: 4px;
+                        margin-left: 4px;
+                        width: 10%;
                     }
 
                     &:hover
