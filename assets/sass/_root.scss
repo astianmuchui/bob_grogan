@@ -1,3 +1,13 @@
+
+/**
+* Bob grogan consulting
+* Utility classes and theme file
+* Written By: Sebastian Muchui
+* astianmuchui@gmail.com
+* https://github.com/astianmuchui
+* google - sebastian muchui
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $primary-color: #181842;
@@ -464,7 +474,7 @@ body
         height: 60px;
         position: sticky;
         top: 0;
-        z-index: 999;
+        z-index: 998;
         padding: 1.5% 5%;
         display: inline-flex;
         
@@ -626,7 +636,7 @@ body
         background-color: rgba($primary-color, 0.95);
         position: fixed;
         top: 0;
-        z-index: 12456;
+        z-index: 998;
         @extend .shadowed;
         backdrop-filter: blur(3px); 
         overflow-y: hidden;
@@ -638,8 +648,8 @@ body
             height: 20px;
             @extend .flex-column;
             position: relative;
-            top: 15%;
-            left: 8%;
+            top: 13%;
+            left: 80%;
             box-sizing: content-box;
             background-color: $white;
             border-radius: 50%;
@@ -665,7 +675,7 @@ body
                 a, span
                 {
                     color: $white;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     height: 20px;
                     padding-bottom: 5px;
                     
@@ -712,7 +722,7 @@ body
                         a
                         {
                             color: $white;
-                            font-size: 5px;
+                            font-size: 10px;
                             height: 10px;
                             display: block;
                             width: 100%;
@@ -771,7 +781,7 @@ body
 
                 *
                 {
-                    font-size: smaller;
+                    font-size: 13px;
                     margin: 5px 0;
                 }
 
@@ -834,8 +844,6 @@ body
     {
         overflow-x: hidden !important;
 
-        
-
         & > section
         {
             max-width: 100%;
@@ -875,7 +883,7 @@ body
                 {
                     display: flex;
                     position: relative;
-                    left: 80%;
+                    left: 85%;
                     top: 20%;
                 }
 
@@ -897,6 +905,7 @@ body
 
                 & > *
                 {
+                    width: 90%;
                     margin-bottom: 20px;
                 }
             }

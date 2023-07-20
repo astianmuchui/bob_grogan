@@ -1,3 +1,10 @@
+/**
+ * Written by sebastian muchui
+ * https://github.com/astianmuchui
+ * google - sebastian muchui
+ * astianmuchui@gmail.com
+*/
+
 // Use id's incase there is need to distinguish from md screen header
 
 const header = document.querySelector('#header'); /* Desktop header element */
