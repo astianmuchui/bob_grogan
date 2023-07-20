@@ -10,9 +10,42 @@
 
     <header id="header">
        
-        <p class="txt-white">Bob Grogan Consulting</p>
+        <p class="txt-white">Bob Grogan Consulting </p>
 
         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li> 
+             
+                <li class="services"><a >Services <i class="fas fa-caret-down"></i></a>
+                    <ul id="nav">
+                        <li><a href="#"> Strategy & Policy </a></li>
+                        <li><a href="#"> Project Management & Evaluation </a></li>
+                        <li><a href="#">ICT</a></li>
+                        <li><a href="#">ISO Management Systems</a></li>
+                        <li><a href="#">Hospital Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Downloads </a></li>
+            </ul>
+
+            <div class="hamburger" id="toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="phone-menu " id="menu">
+        <span id ="close">
+                <!-- Cancel button -->
+                &times;
+            </span>
+    
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li> 
@@ -33,13 +66,13 @@
                 <li><a href="#">Downloads </a></li>
             </ul>
 
-    </header>
+    </div>
 
     <main>
 
         <div class="container">
             <p>Leading the future in policy, strategy & project management </p>
-            <a href="#" class="btn-secondary btn-rounded txt-white">Explore</a>
+            <a href="#" class="btn-primary btn-rounded">Explore</a>
         </div>
     </main> 
 
@@ -271,7 +304,6 @@
                     <li><i class="fas fa-check"></i> <span> Market Research </span> </li>
                     <li><i class="fas fa-check"></i> <span> Product development </span> </li>
                     <li><i class="fas fa-check"></i> <span> Digital marketing </span> </li>
-
                     <li><i class="fas fa-check"></i> <span> Procurement planning </span> </li>
                     <li><i class="fas fa-check"></i> <span> establishing the procurement process </span> </li>
                     <li><i class="fas fa-check"></i> <span> Inventory management systems </span> </li>
@@ -283,6 +315,7 @@
     </section>
 
     <section>
+        
         <div class="grid-container">
 
             <div class="text">
@@ -375,6 +408,7 @@
     </section>
 
     <section class="blog">
+
         <h3 class="txt-primary">From our blog</h3>
 
         <div class="grid-container">
@@ -385,7 +419,7 @@
         <div class="post">
             <h4>
                 <a href="#">How to write a winning proposal</a>
-            </h1>
+            </h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at dolores nulla quos rerum quo ipsam optio tempora non? Praesentium dolorem repellat deleniti voluptate quisquam impedit ex? Repudiandae, totam vel?
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi deserunt culpa aut officiis harum voluptates, maiores cupiditate ut quas ad?
@@ -571,6 +605,8 @@
 
     <script src="/assets/js/font_awesome_main.js"></script>
     <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/menu.js"></script>
+
 
 </body>
 </html>
