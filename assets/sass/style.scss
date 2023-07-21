@@ -2,7 +2,7 @@
 
 body
 {
-    background-color: $white;
+    background-color: $bg;
 
     main
     {
@@ -18,7 +18,7 @@ body
         {
             height: 100%;
             width: 100%;
-            background-color: rgba(lighten($primary-color, 10), 0.6);
+            background-color: rgba(lighten($primary-color, 10), 0.7);
             backdrop-filter: blur(2px);
             @extend .flex-column, .x-start;
             padding-left: 5%;
@@ -96,7 +96,7 @@ body
             .text
             {
                 @extend .y-start, .x-start;
-                background-image: url("../img/blob.png");
+                // background-image: url("../img/blob.png");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 70%;
@@ -217,6 +217,7 @@ body
         height: 160vh;
         @extend .y-start;
 
+
         .grid-container
         {
             width: 90%;
@@ -224,8 +225,10 @@ body
 
         h3
         {
-            position: relative;     
-        }
+            width: 90%;
+            text-align: center;
+            opacity: 0.8;
+        } 
 
         .grid-container
         {
@@ -234,6 +237,7 @@ body
             .image
             {   
                 background-image: none;
+                margin-top: 2%;
             }
 
             .post
@@ -264,8 +268,9 @@ body
                 p
                 {
                     margin-top: 5px;
-
-                    font-size: 8px;
+                    word-spacing: 5px;
+                    letter-spacing: 1px;
+                    font-size: 10px;
                     opacity: 0.5;
                     line-height: 21px;
                 }
@@ -286,14 +291,14 @@ body
                     font-size: 12px;
                     opacity: 0.6;
                     color: $primary-color;
-                    width: 25%;
+                    width: max-content;
                     display: inline-flex;
                     justify-content: space-between;
 
                     i
                     {
-                        margin-top: 4px;
-                        margin-left: 4px;
+                        margin-top: 3px;
+                        margin-left: 5px;
                         width: 10%;
                     }
 
@@ -379,8 +384,14 @@ body
                     border: 1px solid $primary-color;
                     outline: none;
                     font-size: 10px;
+                    background-color: transparent;
 
 
+                }
+
+                input[type="submit"]
+                {
+                    background-color: $primary-color;
                 }
 
                 ::placeholder
@@ -398,6 +409,8 @@ body
                     border: 1px solid $primary-color;
                     outline: none;
                     height: 120px;
+                    background-color: transparent;
+
                 }
             }
         }
@@ -524,13 +537,25 @@ body
             {
                 text-align: start;
                 position: relative;
-                left: -55%;
+                left: 0;
+                box-sizing: border-box;
+                padding-left: 5px;
                 height: 5%;
+                opacity: 0.6;
             }
 
             .grid-container
             {
                 height: max-content;
+                margin-bottom: 20px;
+
+                .post
+                {
+                    p
+                    {
+                        font-size: 10px;
+                    }
+                }
             }
 
 
@@ -553,11 +578,68 @@ body
             h4
             {
                 margin-bottom: 20px;
-
-                font-size: 10px;
-                width: 80%;
+                font-size: 16px;
+                width: 90%;
             }
         }
-
+        .contact
+        {
+            height: 80vh;
+    
+            h1
+            {
+                font-weight: 100;
+                font-size: 18px;
+                margin-bottom: 2%;
+            }
+    
+            .form
+            {
+                @extend .shadowed;
+                box-sizing: border-box;
+                padding: 8%;
+                border-radius: 10px;
+                width: 95%;
+    
+                form
+                {
+                    margin-top: 10px;
+    
+    
+                    input
+                    {
+                        border-radius: 10px;
+                        width: 100%;
+                        padding: 2% 5%;
+                        margin-bottom: 4%;
+                        border: 1px solid $primary-color;
+                        outline: none;
+                        font-size: 10px;
+                        height: 40px;
+    
+    
+                    }
+    
+                    ::placeholder
+                    {
+                        font-size: 10px;
+                    }
+    
+                    textarea
+                    {
+                        font-size: 12px;
+                        width: 100%;
+                        padding: 4% 5%;
+                        margin-bottom: 2%;
+                        border-radius: 10px;
+                        border: 1px solid $primary-color;
+                        outline: none;
+                        height: 120px;
+                    }
+                }
+            }
+        }
     }
+
+
 }
